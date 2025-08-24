@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+:root {
+    --primary: #ec1d24;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-color: red #111;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Zain", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    width: auto;
+    z-index: 10;
+    border: 1px solid rgba(221, 234, 248, .08);
+    padding: 7px 21px;
+    display: flex;
+    gap: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(17, 17, 19, .5);
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "•";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 700px;
+    margin: auto;
+    padding: 150px 20px;
+    padding: 150px 20px 125px 20px;
+}
+
+.intro-section h1{
+    font-size: 40px;
+}
+
+.intro-section img {
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.intro-section p {
+    color: rgb(119, 123, 132);
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.section-title {
+    font-family: "Caveat", cursive;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.section-title img {
+        height: 35px;
+    position: relative;
+    left: 125px;
+    top: 5px;
+}
+
+section.section {
+    margin-bottom: 50px;
+}
+
+.navbar .play-icon{
+        line-height: 0;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.navbar .play-icon svg{
+    height: 15px;
+    width: auto;
+    color: var(--primary);
+}
+
+/* ****************************** skills section css starts ****************************** */
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.skills .skill-types{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 20px;
+}
+.skills .skill-types h3 {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+  position: relative;
+}
+
+.skills .skill-types h3::after {
+        content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--primary);
+    margin: 4px auto 0;
+    border-radius: 2px;
+}
+
+.tech-stack {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.tech-stack .tech-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 5px; */
+  text-decoration: none;
+  /* border-radius: 16px; */
+  /* background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1); */
+  /* backdrop-filter: blur(6px); */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  /* cursor: pointer; */
+}
+
+.tech-stack .tech-icons img {
+  height: 50px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.2));
+}
+
+.tech-stack .tech-icons span {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+/* ****************************** skills section css ends ****************************** */
+
+
+
+/* ****************************** skills section css starts ****************************** */
+
+.timeline-data{
+    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    min-height: 110px;
+}
+
+.timeline-circle {
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    z-index: 1;
+    position: relative; 
+}
+
+.timeline-line {
+    background-color: white;
+    display: block;
+    height: 98%;
+    transform: translate(6px,-7px);
+    width: 1px;
+}
+
+.timeline-data .text-end{
+    text-align: end;
+}
+
+.timeline-data .role {
+        font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.timeline-data .role svg{
+    color: var(--primary);
+}
+
+.timeline-data .text-end .role {
+    justify-content: end;
+}
+
+.timeline-data .company {
+        font-size: 16px;
+    font-weight: 700;
+    margin: 2px 0px 5px 0px;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    color: #efefef;
+}
+
+.timeline-data .location, 
+.timeline-data .duration {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin: 2px 0;
+}
+
+
+/* ****************************** skills section css ends ****************************** */
+
+
+.project-showcase {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px solid rgba(221, 234, 248, .1);
+    border-radius: 10px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.project-info h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.project-info h2 img {
+    height: 25px;
+}
+
+.project-info p {
+    color: #c5c5c5;
+    line-height: 1.6;
+    font-size: 17px;
+    font-family: "Caveat", cursive;
+}
+
+.mern-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.mern-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.project-screenshot {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.screenshot-container {
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.screenshot-container img {
+    width: 100%;
+    display: block;
+    animation: scrollHint 6s ease-in-out infinite;
+}
+
+@keyframes scrollHint {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-40px);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.screenshot-container::-webkit-scrollbar {
+    display: none;
+}
+
+.express-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.next-icon {
+    filter: invert(1) !important;
+}
+.visit-btn {
+    display: inline-block;
+    padding: 4px 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.visit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+
+    .skills {
+    gap: 20px;
+}
+
+.tech-stack .tech-icons img {
+    height: 35px;
+}
+
+.skills .skill-types {
+    padding: 20px 20px;
+}
+
+.tech-stack {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.tech-stack .tech-icons span {
+    font-size: 12px;
+    color: #fff;
+}
+
+    .project-showcase {
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+
+        .intro-section h1 {
+    font-size: 32px;
+}
+
+.intro-section p {
+    font-size: 17px;
+}
+
+}
+
