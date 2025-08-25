@@ -18,7 +18,7 @@ import reduxIcon from "../assets/icons/Redux.svg"
 
 const Skills = () => {
   return (
-    <section className='section'>
+    <section className='section' id="skills">
         
         <div className='section-title'>
                 <h3>Things I’m Good At</h3>

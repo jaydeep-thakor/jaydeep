@@ -9,7 +9,7 @@ import tailwindIcon from "../assets/icons/Tailwind.svg"
 
 const Projects = () => {
   return (
-    <section className='section'>
+    <section className='section' id="work">
         
         <div className='section-title'>
         <h3>Things I’ve Built</h3>

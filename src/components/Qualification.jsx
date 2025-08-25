@@ -3,7 +3,7 @@ import { GraduationCap, Youtube, Palette, Binary } from 'lucide-react';
 
 const Qualification = () => {
   return (
-    <section className='section'>
+    <section className='section' id="qualification">
         
          <div className='section-title'>
                 <h3>The Story So Far</h3>
