@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         )}
 
-        <div onClick={() => setIsOpenMusic(!isOpenMusic)} className="play-icon"><Disc3/></div>
+        <div onClick={() => setIsOpenMusic(!isOpenMusic)} className="play-icon"><Disc3 className="rotate disc-icon"/></div>
 
         {isOpenMusic && (
           <div className="nav-dropdown">
