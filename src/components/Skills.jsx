@@ -37,10 +37,10 @@ const Skills = () => {
         <span>CSS</span>
       </a>
 
-      <a className="tech-icons" href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
         <img src={sassIcon} alt="Sass" />
         <span>Sass</span>
-      </a>
+      </a> */}
 
       <a className="tech-icons" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
         <img src={tailwindIcon} alt="TailwindCSS" />
@@ -62,10 +62,10 @@ const Skills = () => {
         <span>React</span>
       </a>
 
-      <a className="tech-icons" href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
         <img src={reduxIcon} alt="Redux" />
         <span>Redux</span>
-      </a>
+      </a> */}
 
     </div>
   </div>
@@ -74,40 +74,40 @@ const Skills = () => {
     <h3>Backend</h3>
     <div className="tech-stack">
 
-      <a className="tech-icons" href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
         <img src={typescriptIcon} alt="TypeScript" />
         <span>TypeScript</span>
-      </a>
+      </a> */}
 
       <a className="tech-icons" href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
         <img className="express-icon" src={expressIcon} alt="Express" />
         <span>Express</span>
       </a>
 
-      <a className="tech-icons" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
         <img src={nodeJsIcon} alt="Node.js" />
         <span>Node.js</span>
-      </a>
+      </a> */}
 
-      <a className="tech-icons" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
         <img className="next-icon" src={nextJsIcon} alt="Next.js" />
         <span>Next.js</span>
-      </a>
-
+      </a> */}
+{/* 
       <a className="tech-icons" href="https://mongoosejs.com/" target="_blank" rel="noopener noreferrer">
         <img src={mongooseJsIcon} alt="Mongoose" />
         <span>Mongoose</span>
-      </a>
+      </a> */}
 
       <a className="tech-icons" href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
         <img src={mongoDbIcon} alt="MongoDB" />
         <span>MongoDB</span>
       </a>
 
-      <a className="tech-icons" href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
         <img src={postgresSqlIcon} alt="PostgreSQL" />
         <span>PostgreSQL</span>
-      </a>
+      </a> */}
 
     </div>
   </div>
