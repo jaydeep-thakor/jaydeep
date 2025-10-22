@@ -47,10 +47,10 @@ const Skills = () => {
         <span>TailwindCSS</span>
       </a>
 
-      <a className="tech-icons" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+      {/* <a className="tech-icons" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
         <img src={bootstrapIcon} alt="Bootstrap" />
         <span>Bootstrap</span>
-      </a>
+      </a> */}
 
       <a className="tech-icons" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
         <img src={javascriptIcon} alt="JavaScript" />
@@ -84,10 +84,10 @@ const Skills = () => {
         <span>Express</span>
       </a>
 
-      {/* <a className="tech-icons" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+      <a className="tech-icons" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
         <img src={nodeJsIcon} alt="Node.js" />
         <span>Node.js</span>
-      </a> */}
+      </a>
 
       {/* <a className="tech-icons" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
         <img className="next-icon" src={nextJsIcon} alt="Next.js" />
