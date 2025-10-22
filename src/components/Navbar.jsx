@@ -77,7 +77,7 @@ const Navbar = () => {
             <a target="_blank" href="">imjaydeepcreation@gmail.com</a>
             <a target="_blank" href="https://www.instagram.com/jaydeep7__">Instagram</a>
             <a target="_blank" href="https://in.linkedin.com/in/jaydeep-thakor-804a3b283">LinkedIn</a>
-            <a target="_blank" href="https://www.youtube.com/@jaydeep7__">YouTube</a>
+            <a target="_blank" href="https://www.youtube.com/@jaydeepcreation">YouTube</a>
             <a target="_blank" href="https://github.com/jaydeep-thakor">Github</a>
           </div>
         )}
