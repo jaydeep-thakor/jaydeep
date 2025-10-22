@@ -625,6 +625,7 @@ span.artist-name {
   transition: transform 0.2s ease;
   line-height: 1;
   color: #333;
+  z-index: 1;
 }
 
 .modal-close:hover {
