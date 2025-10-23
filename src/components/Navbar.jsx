@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isOpenMusic, setIsOpenMusic] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentSong, setCurrentSong] = useState(null)
+const [activeSection, setActiveSection] = useState("home")
 
   const audioRef = useRef(new Audio())
 
@@ -48,14 +49,67 @@ const Navbar = () => {
     return () => audio.removeEventListener("ended", handleEnded)
   }, [])
 
+  const scrollToSection = (id) => {
+  const section = document.getElementById(id)
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" })
+    window.history.replaceState(null, "", window.location.pathname)
+  }
+}
+
+useEffect(() => {
+  const sections = document.querySelectorAll("section[id]") // all sections that have an id
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id)
+        }
+      })
+    },
+    {
+      threshold: 0.5, // trigger when 50% of section is visible
+    }
+  )
+
+  sections.forEach((sec) => observer.observe(sec))
+  return () => sections.forEach((sec) => observer.unobserve(sec))
+}, [])
+
   return (
     <div>
       <div className="navbar">
-        <a id="home" className="nav-link active">Home</a>
-        <a id="work" className="nav-link">Work</a>
-        <a id="qualification" className="nav-link">Qualification</a>
-        <a id="skill" className="nav-link">Skill</a>
-        <a id="about" className="nav-link">About</a>
+        <a
+  onClick={() => scrollToSection("home")}
+  className={`nav-link ${activeSection === "home" ? "active" : ""}`}
+>
+  Home
+</a>
+<a
+  onClick={() => scrollToSection("work")}
+  className={`nav-link ${activeSection === "work" ? "active" : ""}`}
+>
+  Work
+</a>
+<a
+  onClick={() => scrollToSection("qualification")}
+  className={`nav-link ${activeSection === "qualification" ? "active" : ""}`}
+>
+  Qualification
+</a>
+<a
+  onClick={() => scrollToSection("skills")}
+  className={`nav-link ${activeSection === "skills" ? "active" : ""}`}
+>
+  Skill
+</a>
+<a
+  onClick={() => scrollToSection("about")}
+  className={`nav-link ${activeSection === "about" ? "active" : ""}`}
+>
+  About
+</a>
+
 
         <a
           id="contact"

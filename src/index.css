@@ -15,6 +15,10 @@ html {
     scrollbar-color: red #111;
     scrollbar-gutter: stable;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 120px;
 }
 
 body {

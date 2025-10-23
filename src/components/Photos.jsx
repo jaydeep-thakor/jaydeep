@@ -16,7 +16,7 @@ const Photos = () => {
   const images = [img1, img2, img3, img4, img4, img4, img4, img4];
 
   return (
-    <section className='section' id="skills">
+    <section className='section' id="about">
       <div className='section-title'>
         <h3>Life Behind the pixels</h3>
         <img src={arrowIcon} alt="" />
